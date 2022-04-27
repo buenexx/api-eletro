@@ -26,4 +26,14 @@ class CreateTest extends TestCase
         ]);
     }
 
+    public function test_it_should_be_required()
+    {
+        $this->postJson(route('brand.create'), [
+            'name' => '',
+            'description' => 'Eletrolux description'
+        ])->assertStatus(Response::HTTP_UNPROCESSABLE_ENTITY)
+            ->assertJsonValidationErrors([
+                'name' => __('validation.required', ['attribute' => 'name'])
+            ]);
+    }
 }
