@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Brand\BrandCreateController;
 use App\Http\Controllers\Product\ProductCreateController;
+use App\Http\Controllers\Product\ProductShowController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 });*/
 
-Route::post('brand/create', BrandCreateController::class)->name('brand.create');
+Route::post('brands/create', BrandCreateController::class)->name('brand.create');
 
-Route::post('product/create', ProductCreateController::class)->name('product.create');
+Route::prefix('products')->group(function () {
+    Route::get('/{product}', ProductShowController::class)->name('product.show');
+    Route::post('create', ProductCreateController::class)->name('product.create');
+});
