@@ -11,6 +11,13 @@ class ProductCreateController extends Controller
 {
     public function __invoke()
     {
+        request()->validate([
+            'name' => 'required|string|max:255|min:3',
+            'description' => 'required|string|max:255',
+            'tension' => 'required|string|max:10',
+            'brand_id' => 'required|integer',
+        ]);
+
         Product::query()->create([
             'name' => request('name'),
             'description' => request('description'),

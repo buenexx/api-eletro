@@ -22,4 +22,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('brand/create', BrandCreateController::class)->name('brand.create');
 
-Route::post('brand/create', ProductCreateController::class)->name('product.create');
+Route::post('product/create', ProductCreateController::class)->name('product.create');
