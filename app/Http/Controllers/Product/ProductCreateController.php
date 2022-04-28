@@ -4,12 +4,13 @@ namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class ProductCreateController extends Controller
 {
-    public function __invoke()
+    public function __invoke(): JsonResponse
     {
         request()->validate([
             'name' => 'required|string|max:255|min:3',
