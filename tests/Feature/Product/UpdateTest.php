@@ -16,7 +16,7 @@ class UpdateTest extends TestCase
     {
         $product = Product::factory()->createOne();
 
-        $this->putJson(route('product.update', $product), [
+        $this->postJson(route('product.update', $product), [
             'name' => 'New Product Name',
             'description' => 'New Product Description',
             'tension' => '330v',
@@ -34,7 +34,7 @@ class UpdateTest extends TestCase
     {
         $product = Product::factory()->createOne();
 
-        $this->putJson(route('product.update', $product), [
+        $this->postJson(route('product.update', $product), [
             'name' => 'v',
             'description' => 'New Product Description',
             'tension' => '330v',

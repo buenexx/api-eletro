@@ -1,0 +1,194 @@
+{
+	"id": "848d450e-f48e-5a53-6aef-9871c62fc334",
+	"name": "api-eletro - Localhost",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Brand",
+			"description": "",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"order": [
+				"4f990e89-f6dd-ce17-9dd5-589ea249c722"
+			],
+			"owner": "8256900",
+			"folders_order": [],
+			"id": "64a383cc-47c6-e0db-84e8-fcbf029e2cd6"
+		},
+		{
+			"name": "Product",
+			"description": "",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"order": [
+				"64192a67-22bb-bd95-9953-c00b1065e8eb",
+				"26329777-299f-5442-f11b-4cb5890b642c",
+				"0d46d0e2-7be0-7df8-1a65-d4b717e869a1",
+				"0e545044-cdfe-fd1c-36f2-df6712a585ee"
+			],
+			"owner": "8256900",
+			"folders_order": [],
+			"id": "32b11e82-5696-1a1d-faa9-de855c729232"
+		}
+	],
+	"folders_order": [
+		"32b11e82-5696-1a1d-faa9-de855c729232",
+		"64a383cc-47c6-e0db-84e8-fcbf029e2cd6"
+	],
+	"timestamp": 1651230205891,
+	"owner": "8256900",
+	"public": false,
+	"requests": [
+		{
+			"id": "0d46d0e2-7be0-7df8-1a65-d4b717e869a1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/products/6/update",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651232885485,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "32b11e82-5696-1a1d-faa9-de855c729232",
+			"rawModeData": "{\n\t\"name\": \"Generic Product updated\",\n\t\"description\": \"Generic Product description updated\",\n\t\"tension\": \"330v\",\n\t\"brand_id\": \"7\"\n}"
+		},
+		{
+			"id": "0e545044-cdfe-fd1c-36f2-df6712a585ee",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/products/6/delete",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651234233076,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "32b11e82-5696-1a1d-faa9-de855c729232",
+			"rawModeData": ""
+		},
+		{
+			"id": "26329777-299f-5442-f11b-4cb5890b642c",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/products/6",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"data": null,
+			"dataMode": "params",
+			"name": "Show",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651232265388,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "32b11e82-5696-1a1d-faa9-de855c729232"
+		},
+		{
+			"id": "4f990e89-f6dd-ce17-9dd5-589ea249c722",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/brands/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651231381446,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "64a383cc-47c6-e0db-84e8-fcbf029e2cd6",
+			"rawModeData": "{\n\t\"name\": \"Eletrolux\",\n    \"description\": \"Eletrolux description\"\n}\n"
+		},
+		{
+			"id": "64192a67-22bb-bd95-9953-c00b1065e8eb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/products/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "848d450e-f48e-5a53-6aef-9871c62fc334",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651231947424,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "32b11e82-5696-1a1d-faa9-de855c729232",
+			"rawModeData": "{\n\t\"name\": \"Generic Product\",\n    \"description\": \"Generic Product description\",\n    \"tension\": \"220v\",\n    \"brand_id\": \"7\"\n}\n"
+		}
+	]
+}
